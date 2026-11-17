@@ -1,0 +1,28 @@
+{
+  "config": {
+    "noise": "salt_pepper",
+    "sigma": 20.0,
+    "amount": 0.05,
+    "kernel": 3,
+    "seed": 42,
+    "edge_threshold": 20.0
+  },
+  "shape": [
+    512,
+    512
+  ],
+  "gray_range": [
+    0,
+    255
+  ],
+  "padding": "edge",
+  "sobel": "3x3; magnitude = hypot(Gx, Gy) / 8; display = clip(2*magnitude,0,255)",
+  "edge_f1": "exact pixel matching; both edge maps empty => 1",
+  "source": "samples/demo_1.png",
+  "created_utc": "2026-10-30T01:32:56.344497+00:00",
+  "versions": {
+    "python": "3.12.10",
+    "numpy": "2.5.4",
+    "Pillow": "12.3.0"
+  }
+}

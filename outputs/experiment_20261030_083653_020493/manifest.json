@@ -1,0 +1,40 @@
+{
+  "config": {
+    "sigmas": [
+      10,
+      20,
+      30
+    ],
+    "amounts": [
+      0.01,
+      0.05,
+      0.1
+    ],
+    "kernels": [
+      3,
+      5,
+      7
+    ],
+    "repeats": 5,
+    "seed": 42,
+    "edge_threshold": 20
+  },
+  "sources": [
+    "demo_1",
+    "demo_2",
+    "demo_3"
+  ],
+  "created_utc": "2026-10-30T01:36:53.091424+00:00",
+  "versions": {
+    "python": "3.12.10",
+    "numpy": "2.5.4",
+    "Pillow": "12.3.0"
+  },
+  "cancelled": false,
+  "completed_noise_trials": 90,
+  "errors": [],
+  "padding": "edge",
+  "sobel_scale": "1/8",
+  "aggregation": "per image/configuration across seeds; sample std ddof=1; one run => std=0",
+  "infinite_psnr_std": "all +inf => 0; mixed finite/+inf => +inf"
+}
